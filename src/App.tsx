@@ -180,21 +180,21 @@ export default function App() {
     () => [
       {
         quote:
-          `${siteConfig.companyName} helped us sharpen our learning strategy and package our staff development priorities into a practical, structured program.`,
-        name: "Operations Lead",
+          `${siteConfig.companyName} helped us align training priorities with operational goals and deliver a more structured learning plan for our teams.`,
+        name: "Operations Director",
         role: "Corporate Client",
       },
       {
         quote:
-          "Their delivery style felt polished, collaborative, and clearly tailored to our team's actual day-to-day challenges.",
-        name: "HR Manager",
+          "Their facilitation approach was practical, engaging, and clearly aligned to the realities our staff face every day.",
+        name: "Human Resource Manager",
         role: "SME Client",
       },
       {
         quote:
-          "The balance between professionalism and accessibility made the sessions useful for both management and frontline teams.",
-        name: "Learning Coordinator",
-        role: "Training Partner",
+          "The sessions struck the right balance between strategic insight and practical application for both leadership and operational teams.",
+        name: "Learning & Development Lead",
+        role: "Institutional Client",
       },
     ],
     []
@@ -376,7 +376,7 @@ export default function App() {
           <div className="section-shell relative grid items-center gap-12 py-20 lg:grid-cols-[1.02fr_0.98fr] lg:py-28">
             <div>
               <div className="mb-5 inline-flex items-center rounded-full border border-white/15 bg-white/10 px-4 py-1.5 text-sm font-medium text-white/90 backdrop-blur-md">
-                Corporate training with a premium digital presence
+                Professional training for teams, leaders, and growing organizations
               </div>
               <h1 className="font-display max-w-3xl text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
                 Empowering Individuals and Organizations to Thrive
@@ -430,14 +430,13 @@ export default function App() {
                     />
                     <div className="p-6 text-slate-900">
                       <div className="text-sm font-bold uppercase tracking-[0.2em] text-[#F28C28]">
-                        Trusted first impression
+                        Practical learning solutions
                       </div>
                       <h2 className="mt-2 font-display text-2xl font-extrabold text-[#153C8A]">
-                        A clean corporate website that immediately builds trust
+                        Training support designed to strengthen people and organizational performance
                       </h2>
                       <p className="mt-3 text-sm leading-7 text-slate-600">
-                        Strong visuals, clearer messaging, and a polished structure help potential clients
-                        understand value quickly.
+                        We help clients identify capability gaps, strengthen professional skills, and deliver learning programs with measurable value.
                       </p>
                     </div>
                   </div>
@@ -455,13 +454,13 @@ export default function App() {
                   </div>
 
                   <div className="rounded-[1.5rem] bg-slate-950/80 p-6 text-white shadow-xl">
-                    <div className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-300">
-                      Mission-led
-                    </div>
-                    <h3 className="mt-3 font-display text-2xl font-extrabold">Practical and growth-focused</h3>
-                    <p className="mt-3 text-sm leading-7 text-white/80">
-                      Every section is designed to communicate competence, professionalism, and confidence.
-                    </p>
+                <div className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-300">
+                  Mission-led
+                </div>
+                <h3 className="mt-3 font-display text-2xl font-extrabold">Practical and growth-focused</h3>
+                <p className="mt-3 text-sm leading-7 text-white/80">
+                  Every engagement is shaped to support performance, accountability, and sustainable growth.
+                </p>
                   </div>
                 </div>
               </div>
@@ -534,8 +533,7 @@ export default function App() {
                   Clear, practical value
                 </div>
                 <p className="mt-3 text-slate-600">
-                  Content is structured to support faster decision-making, stronger trust, and better client
-                  engagement.
+                  We focus on relevant content, useful facilitation, and training outcomes that can be applied in real work environments.
                 </p>
               </div>
             </div>
@@ -548,10 +546,10 @@ export default function App() {
                 Key Offerings
               </div>
               <h2 className="font-display text-3xl font-extrabold tracking-tight text-[#153C8A] sm:text-4xl lg:text-5xl">
-                Strong service presentation that makes visitors want to inquire
+                Training solutions built around real organizational needs
               </h2>
               <p className="mt-4 text-lg leading-8 text-slate-600">
-                Each service is presented in a premium format that feels modern, corporate, and easy to trust.
+                Our service areas are designed to help clients build capability, strengthen teams, and support long-term growth.
               </p>
             </div>
 
@@ -592,10 +590,10 @@ export default function App() {
               Mission & Values
             </div>
             <h2 className="font-display text-3xl font-extrabold tracking-tight text-[#153C8A] sm:text-4xl lg:text-5xl">
-              The trust layer every serious corporate website needs
+              The values that guide every engagement
             </h2>
             <p className="mt-4 text-lg leading-8 text-slate-600">
-              This section helps visitors understand not just what Mayura does, but how the company works.
+              Our mission and values reflect how we plan, deliver, and support every training program.
             </p>
           </div>
 
@@ -606,7 +604,7 @@ export default function App() {
                 To inspire excellence through innovative training solutions
               </h3>
               <p className="mt-5 text-lg leading-8 text-white/80">
-                A clear, memorable mission statement communicates purpose faster than a dense block of text.
+                We are committed to helping individuals and organizations build relevant skills, improve performance, and adapt with confidence.
               </p>
               <div className="mt-8 overflow-hidden rounded-[1.5rem] ring-1 ring-white/10">
                 <img
@@ -650,8 +648,7 @@ export default function App() {
                   Trusted by individuals, SMEs, corporates, parastatals, and top management
                 </h2>
                 <p className="mt-5 max-w-3xl text-lg leading-8 text-white/80">
-                  The client journey clearly shows who the company serves, helping visitors quickly identify
-                  if they belong here.
+                  We support a diverse client base with training solutions tailored to different roles, sectors, and organizational priorities.
                 </p>
                 <div className="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
                   {clientele.map((item) => (
@@ -678,17 +675,16 @@ export default function App() {
                 Social Responsibility
               </div>
               <h2 className="font-display text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
-                A professional brand with visible community impact
+                A business that values social impact and responsible growth
               </h2>
               <p className="mt-5 max-w-2xl text-lg leading-8 text-white/80">
                 {siteConfig.companyName} communicates more than business value. The brand also reflects commitment to
                 educational projects and support initiatives for underserved communities.
               </p>
               <div className="mt-8 rounded-[1.75rem] border border-white/10 bg-white/10 p-6 backdrop-blur">
-                <div className="font-display text-xl font-extrabold">Why this improves trust</div>
+                <div className="font-display text-xl font-extrabold">Our approach</div>
                 <p className="mt-3 text-white/75">
-                  It adds warmth and depth to the brand, helping corporate visitors see Mayura as both
-                  capable and responsible.
+                  We believe strong organizations can deliver results while also contributing positively to the communities they serve.
                 </p>
               </div>
             </div>
@@ -706,10 +702,10 @@ export default function App() {
         <section className="section-shell py-20">
           <div className="mb-10 max-w-3xl">
             <div className="mb-3 text-sm font-extrabold uppercase tracking-[0.25em] text-[#F28C28]">
-              Website Experience
+              Client Feedback
             </div>
             <h2 className="font-display text-3xl font-extrabold tracking-tight text-[#153C8A] sm:text-4xl lg:text-5xl">
-              Added a testimonial-style trust section for a stronger conversion feel
+              What clients value about working with Mayura
             </h2>
           </div>
 
@@ -738,8 +734,7 @@ export default function App() {
                   Let&apos;s discuss the right training solution for your team or organization
                 </h2>
                 <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600">
-                  The site brings together a premium interface, a stronger user journey, and direct contact
-                  actions into one polished experience.
+                  Whether you need staff development, leadership training, or a tailored learning program, our team is ready to support your goals.
                 </p>
                 <div className="mt-8 flex flex-wrap gap-4">
                   <button
@@ -774,8 +769,7 @@ export default function App() {
           <div>
             <MayuraLogo />
             <p className="mt-4 max-w-sm leading-7 text-slate-600">
-              A professional training brand positioned to attract serious clients through a premium and
-              trustworthy web experience.
+              Professional training solutions tailored to the needs of individuals, teams, and organizations.
             </p>
           </div>
 
