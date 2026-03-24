@@ -88,27 +88,27 @@ export default function App() {
       {
         icon: Award,
         title: "Excellence",
-        desc: "We deliver training experiences that meet high professional standards and real business needs.",
+        desc: "We maintain high standards in program design, facilitation, and client support from planning through delivery.",
       },
       {
         icon: Sparkles,
         title: "Innovation",
-        desc: "Modern, relevant learning experiences built around changing industries and new ways of working.",
+        desc: "We continuously adapt our learning approach to reflect changing business environments, tools, and workforce needs.",
       },
       {
         icon: ShieldCheck,
         title: "Integrity",
-        desc: "Transparent, ethical, and dependable in every engagement, from briefing to final delivery.",
+        desc: "We value honesty, professionalism, and dependable delivery in every client engagement.",
       },
       {
         icon: Target,
         title: "Client-Centric",
-        desc: "Programs shaped around client goals, team capability gaps, and measurable results.",
+        desc: "Our programs are developed around client priorities, workforce gaps, and practical outcomes.",
       },
       {
         icon: Handshake,
         title: "Collaboration",
-        desc: "We work closely with organizations and leaders to create practical, lasting impact.",
+        desc: "We work closely with leaders and teams to ensure learning solutions are relevant, practical, and sustainable.",
       },
     ],
     []
@@ -118,33 +118,33 @@ export default function App() {
     () => [
       {
         icon: LayoutGrid,
-        title: "Customized Training Programs",
-        desc: "Tailored sessions designed around specific teams, sectors, and learning outcomes.",
+        title: "Tailored Corporate Training",
+        desc: "Customized programs designed around organizational goals, team roles, and targeted learning outcomes.",
       },
       {
         icon: Sparkles,
-        title: "Cutting-edge Curriculum",
-        desc: "Updated content that reflects modern business realities, tools, and best practices.",
+        title: "Professional Skills Development",
+        desc: "Practical learning in communication, leadership, workplace effectiveness, and organizational performance.",
       },
       {
         icon: Globe2,
-        title: "Flexible Delivery Formats",
-        desc: "In-person, virtual, and hybrid delivery to suit different organizations and schedules.",
+        title: "Flexible Delivery Models",
+        desc: "In-person, virtual, and hybrid sessions structured to suit operations, teams, and scheduling needs.",
       },
       {
         icon: Briefcase,
-        title: "Industry Experts",
-        desc: "Experienced facilitators who bring practical insights, not just theory.",
+        title: "Facilitation by Practitioners",
+        desc: "Experienced facilitators who bring industry insight, practical examples, and application-focused delivery.",
       },
       {
         icon: GraduationCap,
-        title: "Certification Programs",
-        desc: "Recognition-based learning pathways that validate skills and competence.",
+        title: "Workshops and Certification Pathways",
+        desc: "Structured learning experiences that support competence building, recognition, and continuous development.",
       },
       {
         icon: Building2,
-        title: "Corporate Capability Building",
-        desc: "Programs that strengthen leadership, performance, communication, and team growth.",
+        title: "Leadership and Team Development",
+        desc: "Programs that strengthen leadership capacity, team effectiveness, accountability, and workplace culture.",
       },
     ],
     []
@@ -154,23 +154,23 @@ export default function App() {
     () => [
       {
         icon: Target,
-        title: "Tailored Training",
-        desc: "Programs aligned to client goals, sector needs, and real skill gaps.",
+        title: "Needs-Based Programs",
+        desc: "Training solutions aligned to client priorities, sector realities, and workforce capability needs.",
       },
       {
         icon: Globe2,
         title: "Flexible Delivery",
-        desc: "Virtual, in-person, and hybrid learning models built around modern schedules.",
+        desc: "Virtual, in-person, and hybrid learning formats built around organizational schedules and team availability.",
       },
       {
         icon: Users,
         title: "Expert Facilitators",
-        desc: "Practical insight from experienced professionals with real-world perspective.",
+        desc: "Programs facilitated by experienced professionals with practical, real-world perspective.",
       },
       {
         icon: CheckCircle2,
         title: "Results Focused",
-        desc: "Training designed to improve performance, capability, and organizational growth.",
+        desc: "Learning interventions designed to strengthen performance, build confidence, and support measurable growth.",
       },
     ],
     []
@@ -201,7 +201,7 @@ export default function App() {
   );
 
   const clientele = useMemo(
-    () => ["Individuals", "SMEs", "Corporates", "Top Management"],
+    () => ["Individuals", "SMEs", "Corporates", "Senior Leadership"],
     []
   );
 
@@ -376,14 +376,14 @@ export default function App() {
           <div className="section-shell relative grid items-center gap-12 py-20 lg:grid-cols-[1.02fr_0.98fr] lg:py-28">
             <div>
               <div className="mb-5 inline-flex items-center rounded-full border border-white/15 bg-white/10 px-4 py-1.5 text-sm font-medium text-white/90 backdrop-blur-md">
-                Professional training for teams, leaders, and growing organizations
+                Professional development, leadership training, and organizational capability building
               </div>
               <h1 className="font-display max-w-3xl text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-                Empowering Individuals and Organizations to Thrive
+                Building skills, strengthening teams, and supporting organizational growth
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-white/80">
-                {siteConfig.companyName} delivers high-quality professional training programs tailored to the evolving
-                needs of individuals, teams, SMEs, corporations, and top management.
+                {siteConfig.companyName} delivers practical training solutions for individuals, SMEs, corporates,
+                and leadership teams through programs tailored to real business and workforce needs.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <button
@@ -403,9 +403,9 @@ export default function App() {
 
               <div className="mt-10 grid max-w-2xl gap-4 sm:grid-cols-3">
                 {[
-                  ["Tailored", "Training solutions"],
-                  ["Flexible", "Virtual, hybrid, physical"],
-                  ["Professional", "Client-ready delivery"],
+                  ["Tailored", "Programs built around client priorities"],
+                  ["Flexible", "In-person, virtual, and hybrid delivery"],
+                  ["Practical", "Learning focused on workplace application"],
                 ].map(([title, desc]) => (
                   <div
                     key={title}
@@ -504,15 +504,15 @@ export default function App() {
               About Mayura
             </div>
             <h2 className="font-display text-3xl font-extrabold tracking-tight text-[#153C8A] sm:text-4xl lg:text-5xl">
-              A dynamic training company built for today&apos;s competitive business landscape
+              A professional training partner for individuals, teams, and institutions
             </h2>
             <p className="mt-6 text-lg leading-8 text-slate-600">
-              {siteConfig.companyName} is dedicated to empowering individuals and organizations with the knowledge and
-              skills needed to grow, perform, and succeed.
+              {siteConfig.companyName} supports clients with practical, relevant, and professionally delivered
+              training programs designed to improve competence and performance.
             </p>
             <p className="mt-4 text-lg leading-8 text-slate-600">
-              We offer high-quality professional training programs tailored to evolving client needs across
-              different sectors.
+              We work with organizations and professionals across different sectors to deliver learning
+              interventions that address current challenges, build capability, and support long-term growth.
             </p>
 
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
@@ -522,7 +522,7 @@ export default function App() {
                 </div>
                 <div className="mt-3 font-display text-2xl font-extrabold">Professional Development</div>
                 <p className="mt-3 text-white/80">
-                  Helping people and organizations build capabilities that matter in real work environments.
+                  Building workplace skills that improve effectiveness, leadership, service delivery, and team performance.
                 </p>
               </div>
               <div className="rounded-[1.5rem] bg-[#FFF4EA] p-6 ring-1 ring-orange-100">
@@ -530,7 +530,7 @@ export default function App() {
                   Client promise
                 </div>
                 <div className="mt-3 font-display text-2xl font-extrabold text-slate-900">
-                  Clear, practical value
+                  Relevant learning outcomes
                 </div>
                 <p className="mt-3 text-slate-600">
                   We focus on relevant content, useful facilitation, and training outcomes that can be applied in real work environments.
@@ -645,7 +645,7 @@ export default function App() {
               <div className="rounded-[2rem] bg-[#153C8A] p-8 text-white shadow-xl lg:col-span-2">
                 <div className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-300">Clientele</div>
                 <h2 className="mt-4 font-display text-3xl font-extrabold">
-                  Trusted by individuals, SMEs, corporates, parastatals, and top management
+                  Serving individuals, SMEs, corporates, parastatals, and senior leadership teams
                 </h2>
                 <p className="mt-5 max-w-3xl text-lg leading-8 text-white/80">
                   We support a diverse client base with training solutions tailored to different roles, sectors, and organizational priorities.
@@ -678,8 +678,8 @@ export default function App() {
                 A business that values social impact and responsible growth
               </h2>
               <p className="mt-5 max-w-2xl text-lg leading-8 text-white/80">
-                {siteConfig.companyName} communicates more than business value. The brand also reflects commitment to
-                educational projects and support initiatives for underserved communities.
+                {siteConfig.companyName} believes professional growth and social responsibility can work together,
+                and remains committed to initiatives that support learning, inclusion, and community development.
               </p>
               <div className="mt-8 rounded-[1.75rem] border border-white/10 bg-white/10 p-6 backdrop-blur">
                 <div className="font-display text-xl font-extrabold">Our approach</div>
@@ -705,7 +705,7 @@ export default function App() {
               Client Feedback
             </div>
             <h2 className="font-display text-3xl font-extrabold tracking-tight text-[#153C8A] sm:text-4xl lg:text-5xl">
-              What clients value about working with Mayura
+              What clients value about working with us
             </h2>
           </div>
 
