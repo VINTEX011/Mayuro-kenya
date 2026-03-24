@@ -36,7 +36,7 @@ type InquiryState = {
 };
 
 const contact: ContactConfig = {
-  email: "hello@mayuro.co.ke",
+  email: "hello@mayura.co.ke",
   phoneDisplay: "+254 700 000 000",
   phoneWhatsApp: "254700000000",
   addressLines: [
@@ -172,7 +172,7 @@ export default function App() {
     () => [
       {
         quote:
-          "Mayuro Kenya helped us sharpen our learning strategy and package our staff development priorities into a practical, structured program.",
+          "Mayura Corp Ltd helped us sharpen our learning strategy and package our staff development priorities into a practical, structured program.",
         name: "Operations Lead",
         role: "Corporate Client",
       },
@@ -246,7 +246,7 @@ export default function App() {
 
     if (!validateForm()) return;
 
-    const subject = encodeURIComponent("Mayuro Kenya Consultation Request");
+    const subject = encodeURIComponent("Mayura Corp Ltd Consultation Request");
     const body = encodeURIComponent(
       [
         `Full Name: ${formData.fullName}`,
@@ -273,7 +273,7 @@ export default function App() {
             </div>
             <div>
               <div className="font-display text-lg font-extrabold tracking-tight text-[#153C8A]">
-                MAYURO KENYA
+                MAYURA CORP LTD
               </div>
               <div className="text-xs tracking-[0.18em] text-slate-500">
                 Professional Training Solutions
@@ -384,7 +384,7 @@ export default function App() {
                 Empowering Individuals and Organizations to Thrive
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-white/80">
-                Mayuro Kenya delivers high-quality professional training programs tailored to the evolving
+                Mayura Corp Ltd delivers high-quality professional training programs tailored to the evolving
                 needs of individuals, teams, SMEs, corporations, and top management.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
@@ -504,13 +504,13 @@ export default function App() {
 
           <div>
             <div className="mb-3 text-sm font-extrabold uppercase tracking-[0.25em] text-[#F28C28]">
-              About Mayuro
+              About Mayura
             </div>
             <h2 className="font-display text-3xl font-extrabold tracking-tight text-[#153C8A] sm:text-4xl lg:text-5xl">
               A dynamic training company built for today&apos;s competitive business landscape
             </h2>
             <p className="mt-6 text-lg leading-8 text-slate-600">
-              Mayuro Kenya is dedicated to empowering individuals and organizations with the knowledge and
+              Mayura Corp Ltd is dedicated to empowering individuals and organizations with the knowledge and
               skills needed to grow, perform, and succeed.
             </p>
             <p className="mt-4 text-lg leading-8 text-slate-600">
@@ -597,7 +597,7 @@ export default function App() {
               The trust layer every serious corporate website needs
             </h2>
             <p className="mt-4 text-lg leading-8 text-slate-600">
-              This section helps visitors understand not just what Mayuro does, but how the company works.
+              This section helps visitors understand not just what Mayura does, but how the company works.
             </p>
           </div>
 
@@ -683,13 +683,13 @@ export default function App() {
                 A professional brand with visible community impact
               </h2>
               <p className="mt-5 max-w-2xl text-lg leading-8 text-white/80">
-                Mayuro Kenya communicates more than business value. The brand also reflects commitment to
+                Mayura Corp Ltd communicates more than business value. The brand also reflects commitment to
                 educational projects and support initiatives for underserved communities.
               </p>
               <div className="mt-8 rounded-[1.75rem] border border-white/10 bg-white/10 p-6 backdrop-blur">
                 <div className="font-display text-xl font-extrabold">Why this improves trust</div>
                 <p className="mt-3 text-white/75">
-                  It adds warmth and depth to the brand, helping corporate visitors see Mayuro as both
+                  It adds warmth and depth to the brand, helping corporate visitors see Mayura as both
                   capable and responsible.
                 </p>
               </div>
@@ -774,7 +774,7 @@ export default function App() {
       <footer id="contact" className="border-t border-slate-200 bg-white">
         <div className="section-shell grid gap-10 py-14 lg:grid-cols-3">
           <div>
-            <div className="font-display text-xl font-extrabold tracking-tight text-[#153C8A]">MAYURO KENYA</div>
+            <div className="font-display text-xl font-extrabold tracking-tight text-[#153C8A]">MAYURA CORP LTD</div>
             <p className="mt-4 max-w-sm leading-7 text-slate-600">
               A professional training brand positioned to attract serious clients through a premium and
               trustworthy web experience.
@@ -813,7 +813,7 @@ export default function App() {
               </div>
               <h3 className="mt-2 font-display text-2xl font-extrabold">Book Consultation</h3>
               <p className="mt-2 text-white/75">
-                Share your training need and Mayuro Kenya will know where to start.
+                Share your training need and Mayura Corp Ltd will know where to start.
               </p>
             </div>
 

@@ -1,6 +1,6 @@
-# Mayuro Kenya
+# Mayura Corp Ltd
 
-A production-oriented React + Vite website for Mayuro Kenya.
+A production-oriented React + Vite website for Mayura Corp Ltd.
 
 ## Tech stack
 
