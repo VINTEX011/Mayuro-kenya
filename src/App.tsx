@@ -18,13 +18,7 @@ import {
   Users,
   X,
 } from "lucide-react";
-
-type ContactConfig = {
-  email: string;
-  phoneDisplay: string;
-  phoneWhatsApp: string;
-  addressLines: string[];
-};
+import { siteConfig } from "./siteConfig";
 
 type InquiryState = {
   fullName: string;
@@ -33,18 +27,6 @@ type InquiryState = {
   organization: string;
   otherNeed: string;
   notes: string;
-};
-
-const contact: ContactConfig = {
-  email: "hello@mayura.co.ke",
-  phoneDisplay: "+254 700 000 000",
-  phoneWhatsApp: "254700000000",
-  addressLines: [
-    "Nine Planets Apartments, Suite P4",
-    "Kabarnet Gardens, Off Ngong Road",
-    "Opposite the Sudan Embassy",
-    "Nairobi, Kenya",
-  ],
 };
 
 const trainingOptions = [
@@ -65,6 +47,32 @@ const initialForm: InquiryState = {
   otherNeed: "",
   notes: "",
 };
+
+function MayuraLogo({ compact = false }: { compact?: boolean }) {
+  return (
+    <div className={`flex items-center ${compact ? "gap-3" : "gap-4"}`}>
+      <div className={`relative ${compact ? "h-11 w-11" : "h-16 w-16"}`} aria-hidden="true">
+        <span className="absolute left-[46%] top-0 h-full w-[26%] -translate-x-1/2 rounded-full bg-[#2D348F]" />
+        <span className="absolute left-[24%] top-[36%] h-[44%] w-[34%] rounded-full bg-[#D97B1D]" />
+        <span className="absolute left-[41%] top-[26%] h-[38%] w-[28%] rounded-full bg-[#98B933]" />
+        <span className="absolute left-[52%] top-[18%] h-[48%] w-[18%] rounded-full bg-[#F4D34E]" />
+        <span className="absolute left-[58%] top-[12%] h-[58%] w-[16%] rounded-full bg-[#C43131]" />
+      </div>
+      <div>
+        <div
+          className={`font-display font-extrabold uppercase tracking-tight text-[#2D348F] ${
+            compact ? "text-xl" : "text-3xl sm:text-4xl"
+          }`}
+        >
+          {siteConfig.logoText}
+        </div>
+        <div className={`${compact ? "text-[11px]" : "text-sm"} uppercase tracking-[0.22em] text-slate-500`}>
+          {siteConfig.companyName}
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default function App() {
   const [open, setOpen] = useState(false);
@@ -172,7 +180,7 @@ export default function App() {
     () => [
       {
         quote:
-          "Mayura Corp Ltd helped us sharpen our learning strategy and package our staff development priorities into a practical, structured program.",
+          `${siteConfig.companyName} helped us sharpen our learning strategy and package our staff development priorities into a practical, structured program.`,
         name: "Operations Lead",
         role: "Corporate Client",
       },
@@ -198,7 +206,7 @@ export default function App() {
   );
 
   const openWhatsApp = () => {
-    window.open(`https://wa.me/${contact.phoneWhatsApp}`, "_blank", "noopener,noreferrer");
+    window.open(`https://wa.me/${siteConfig.whatsappNumber}`, "_blank", "noopener,noreferrer");
   };
 
   const scrollToSection = (id: string) => {
@@ -246,7 +254,7 @@ export default function App() {
 
     if (!validateForm()) return;
 
-    const subject = encodeURIComponent("Mayura Corp Ltd Consultation Request");
+    const subject = encodeURIComponent(`${siteConfig.companyName} Consultation Request`);
     const body = encodeURIComponent(
       [
         `Full Name: ${formData.fullName}`,
@@ -258,7 +266,7 @@ export default function App() {
       ].join("\n")
     );
 
-    window.location.href = `mailto:${contact.email}?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:${siteConfig.email}?subject=${subject}&body=${body}`;
     setOpen(false);
     resetForm();
   };
@@ -267,18 +275,8 @@ export default function App() {
     <div className="min-h-screen bg-[#F8FAFC] text-slate-900">
       <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/90 backdrop-blur-xl">
         <div className="section-shell flex items-center justify-between py-4">
-          <button onClick={() => scrollToSection("hero")} className="flex items-center gap-3 text-left">
-            <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#153C8A] text-lg font-extrabold text-white shadow-sm">
-              M
-            </div>
-            <div>
-              <div className="font-display text-lg font-extrabold tracking-tight text-[#153C8A]">
-                MAYURA CORP LTD
-              </div>
-              <div className="text-xs tracking-[0.18em] text-slate-500">
-                Professional Training Solutions
-              </div>
-            </div>
+          <button onClick={() => scrollToSection("hero")} className="text-left">
+            <MayuraLogo compact />
           </button>
 
           <nav className="hidden items-center gap-8 text-sm font-semibold text-slate-600 md:flex">
@@ -384,7 +382,7 @@ export default function App() {
                 Empowering Individuals and Organizations to Thrive
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-white/80">
-                Mayura Corp Ltd delivers high-quality professional training programs tailored to the evolving
+                {siteConfig.companyName} delivers high-quality professional training programs tailored to the evolving
                 needs of individuals, teams, SMEs, corporations, and top management.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
@@ -510,7 +508,7 @@ export default function App() {
               A dynamic training company built for today&apos;s competitive business landscape
             </h2>
             <p className="mt-6 text-lg leading-8 text-slate-600">
-              Mayura Corp Ltd is dedicated to empowering individuals and organizations with the knowledge and
+              {siteConfig.companyName} is dedicated to empowering individuals and organizations with the knowledge and
               skills needed to grow, perform, and succeed.
             </p>
             <p className="mt-4 text-lg leading-8 text-slate-600">
@@ -683,7 +681,7 @@ export default function App() {
                 A professional brand with visible community impact
               </h2>
               <p className="mt-5 max-w-2xl text-lg leading-8 text-white/80">
-                Mayura Corp Ltd communicates more than business value. The brand also reflects commitment to
+                {siteConfig.companyName} communicates more than business value. The brand also reflects commitment to
                 educational projects and support initiatives for underserved communities.
               </p>
               <div className="mt-8 rounded-[1.75rem] border border-white/10 bg-white/10 p-6 backdrop-blur">
@@ -774,7 +772,7 @@ export default function App() {
       <footer id="contact" className="border-t border-slate-200 bg-white">
         <div className="section-shell grid gap-10 py-14 lg:grid-cols-3">
           <div>
-            <div className="font-display text-xl font-extrabold tracking-tight text-[#153C8A]">MAYURA CORP LTD</div>
+            <MayuraLogo />
             <p className="mt-4 max-w-sm leading-7 text-slate-600">
               A professional training brand positioned to attract serious clients through a premium and
               trustworthy web experience.
@@ -783,20 +781,35 @@ export default function App() {
 
           <div>
             <div className="text-sm font-extrabold uppercase tracking-[0.2em] text-[#F28C28]">Contact</div>
-            <p className="mt-4 leading-7 text-slate-600">
-              Email: {contact.email}
-              <br />
-              Phone: {contact.phoneDisplay}
-            </p>
+            <div className="mt-4 space-y-2 leading-7 text-slate-600">
+              <p>
+                Email:{" "}
+                <a href={`mailto:${siteConfig.email}`} className="font-semibold text-[#153C8A] hover:underline">
+                  {siteConfig.email}
+                </a>
+              </p>
+              <p>
+                Website:{" "}
+                <a
+                  href={siteConfig.websiteUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="font-semibold text-[#153C8A] hover:underline"
+                >
+                  {siteConfig.websiteLabel}
+                </a>
+              </p>
+              <p>Phone: {siteConfig.phoneNumbers.join(" | ")}</p>
+            </div>
           </div>
 
           <div>
             <div className="text-sm font-extrabold uppercase tracking-[0.2em] text-[#F28C28]">Address</div>
             <p className="mt-4 leading-7 text-slate-600">
-              {contact.addressLines.map((line, index) => (
+              {siteConfig.addressLines.map((line, index) => (
                 <span key={line}>
                   {line}
-                  {index < contact.addressLines.length - 1 ? <br /> : null}
+                  {index < siteConfig.addressLines.length - 1 ? <br /> : null}
                 </span>
               ))}
             </p>
@@ -813,7 +826,7 @@ export default function App() {
               </div>
               <h3 className="mt-2 font-display text-2xl font-extrabold">Book Consultation</h3>
               <p className="mt-2 text-white/75">
-                Share your training need and Mayura Corp Ltd will know where to start.
+                Share your training need and {siteConfig.companyName} will know where to start.
               </p>
             </div>
 
