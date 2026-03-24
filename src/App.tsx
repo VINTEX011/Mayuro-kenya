@@ -507,12 +507,13 @@ export default function App() {
               A professional training partner for individuals, teams, and institutions
             </h2>
             <p className="mt-6 text-lg leading-8 text-slate-600">
-              {siteConfig.companyName} supports clients with practical, relevant, and professionally delivered
-              training programs designed to improve competence and performance.
+              {siteConfig.companyName} is a dynamic training company dedicated to empowering individuals and
+              organizations with the knowledge, skills, and professional support needed to grow and succeed.
             </p>
             <p className="mt-4 text-lg leading-8 text-slate-600">
-              We work with organizations and professionals across different sectors to deliver learning
-              interventions that address current challenges, build capability, and support long-term growth.
+              We deliver high-quality professional training programs tailored to evolving client needs across
+              sectors, helping teams and leaders respond effectively to today&apos;s competitive business
+              environment.
             </p>
 
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
@@ -522,7 +523,7 @@ export default function App() {
                 </div>
                 <div className="mt-3 font-display text-2xl font-extrabold">Professional Development</div>
                 <p className="mt-3 text-white/80">
-                  Building workplace skills that improve effectiveness, leadership, service delivery, and team performance.
+                  Supporting individuals and organizations to build stronger workplace capability, leadership confidence, and professional effectiveness.
                 </p>
               </div>
               <div className="rounded-[1.5rem] bg-[#FFF4EA] p-6 ring-1 ring-orange-100">
@@ -533,7 +534,7 @@ export default function App() {
                   Relevant learning outcomes
                 </div>
                 <p className="mt-3 text-slate-600">
-                  We focus on relevant content, useful facilitation, and training outcomes that can be applied in real work environments.
+                  Our programs are designed to deliver applicable knowledge, stronger performance, and lasting value beyond the training room.
                 </p>
               </div>
             </div>
@@ -593,7 +594,7 @@ export default function App() {
               The values that guide every engagement
             </h2>
             <p className="mt-4 text-lg leading-8 text-slate-600">
-              Our mission and values reflect how we plan, deliver, and support every training program.
+              Our mission and values define how we partner with clients, design learning experiences, and deliver meaningful results.
             </p>
           </div>
 
@@ -604,7 +605,7 @@ export default function App() {
                 To inspire excellence through innovative training solutions
               </h3>
               <p className="mt-5 text-lg leading-8 text-white/80">
-                We are committed to helping individuals and organizations build relevant skills, improve performance, and adapt with confidence.
+                This mission reflects our commitment to relevant, forward-looking learning that equips people and organizations to perform, adapt, and lead with confidence.
               </p>
               <div className="mt-8 overflow-hidden rounded-[1.5rem] ring-1 ring-white/10">
                 <img
@@ -734,7 +735,7 @@ export default function App() {
                   Let&apos;s discuss the right training solution for your team or organization
                 </h2>
                 <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600">
-                  Whether you need staff development, leadership training, or a tailored learning program, our team is ready to support your goals.
+                  Whether you are planning staff development, leadership growth, or a customized training program, Mayura Corp Ltd is ready to support your next step.
                 </p>
                 <div className="mt-8 flex flex-wrap gap-4">
                   <button
